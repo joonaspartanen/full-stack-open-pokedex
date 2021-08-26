@@ -34,3 +34,4 @@ jobs:
           heroku_email: "partanen.joonas@gmail.com"
           healthcheck: "https://podedex-jp-2021.herokuapp.com/health"
           checkstring: "ok"
+          rollbackonhealthcheckfailed: true
