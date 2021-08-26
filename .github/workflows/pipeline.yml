@@ -28,7 +28,7 @@ jobs:
       - name: head_commit message
         env:
           HEAD_COMMIT_MESSAGE: ${{ toJson(github.event.head_commit.message) }}
-        run: echo "HEAD_COMMIT_MESSAGE"
+        run: echo "$HEAD_COMMIT_MESSAGE"
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
