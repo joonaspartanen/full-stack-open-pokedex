@@ -32,3 +32,5 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "podedex-jp-2021"
           heroku_email: "partanen.joonas@gmail.com"
+          healthcheck: "https://podedex-jp-2021.herokuapp.com/health"
+          checkstring: "ok"
