@@ -1,9 +1,9 @@
 name: Periodic health check
 
-# Runs every 5 minutes
+# Runs once a month
 on:
   schedule:
-    - cron:  '*/5 * * * *'
+    - cron:  '0 0 1 * *'
 
 jobs:
   periodic_health_check:
